@@ -1,0 +1,40 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Detector</title>
+    <style>
+    button {
+        padding: 8px 16px;
+    }
+    pre {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    video {
+        width: 100%;
+    }
+    #media {
+        max-width: 1280px;
+    }
+    </style>
+</head>
+<body>
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" style="display: none" onclick="stop()">Stop</button>
+    <div style="display:table;">
+        <div id="media" style="display: none; float:left;">
+            <h2>Media</h2>
+            <video id="video" style="height: 500px;width: 500px" autoplay="true" playsinline="true"></video>
+        </div>
+        <div id="cards" style="padding: 10px; display:none; float:left;">
+        </div>
+        <div id="detected_cards" style="padding: 10px; display:none; float:right;">
+            <h2>Detected Cards</h2>
+            <pre id="data-channel-status"></pre>
+            <pre id="data-channel"></pre>
+        </div>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>
