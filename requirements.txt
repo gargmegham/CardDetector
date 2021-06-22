@@ -9,7 +9,6 @@ chardet==4.0.0
 crc32c==2.2
 cryptography==3.4.7
 dnspython==2.1.0
-fast-colorthief==0.0.4
 idna==3.2
 ImageHash==4.2.0
 multidict==5.1.0
